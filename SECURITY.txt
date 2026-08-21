@@ -1,0 +1,5 @@
+SECURITY AND SENSITIVE-MATERIAL POLICY
+
+Report a suspected credential, personally identifying record, unlicensed third-party file, or location-sensitive data inclusion privately to the corresponding author.  Do not open an issue containing secrets or restricted data.
+
+This release excludes raw satellite products, grid-level input/output data, fitted models, project logs, account files, and third-party materials.  Repository maintainers should re-run a credential and path scan before future updates.

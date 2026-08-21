@@ -1,0 +1,10 @@
+﻿scheme,persistence_score,oof_response_score,construction_exposure_score,hydrogeological_susceptibility_score,top_decile_grid_count
+equal,0.25,0.25,0.25,0.25,1810
+emphasize_persistence_score,0.4,0.2,0.2,0.2,1810
+emphasize_oof_response_score,0.2,0.4,0.2,0.2,1810
+emphasize_construction_exposure_score,0.2,0.2,0.4,0.2,1810
+emphasize_hydrogeological_susceptibility_score,0.2,0.2,0.2,0.4,1810
+downweight_persistence_score,0.1,0.3,0.3,0.3,1810
+downweight_oof_response_score,0.3,0.1,0.3,0.3,1810
+downweight_construction_exposure_score,0.3,0.3,0.1,0.3,1810
+downweight_hydrogeological_susceptibility_score,0.3,0.3,0.3,0.1,1810

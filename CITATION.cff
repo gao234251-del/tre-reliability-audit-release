@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript and this software record."
+title: "TRE reconstruction and audit scripts"
+version: "0.1.1"
+date-released: 2026-08-21
+authors:
+  - family-names: Gao
+    given-names: Wang
+  - family-names: Huang
+    given-names: Wei
+  - family-names: Zhang
+    given-names: Pengbo
+  - family-names: Qin
+    given-names: Shixuan
+abstract: "Selected author-written scripts for auditing and reconstructing frozen TRE workflow outputs; not an end-to-end InSAR processing package."

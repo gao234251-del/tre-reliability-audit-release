@@ -1,0 +1,38 @@
+{
+  "status": "PASS_EXACT_ARCHIVED_PRIORITY_REPRODUCTION",
+  "scientific_boundary": "This is a deterministic V15 reconstruction from the documented source DEM, locked folds, archived method and recovered input workbook. It is not the lost historical byte-identical CSV.",
+  "rows": 48470,
+  "eligible_construction_n": 18100,
+  "priority_n": 1810,
+  "evidence_supported_priority_n": 1469,
+  "exploratory_priority_n": 341,
+  "robust_priority_n": 1574,
+  "priority_changed_membership_n": 428,
+  "priority_jaccard_old_vs_physical": 0.7885375494071146,
+  "robust_priority_jaccard_old_vs_physical": 0.786117381489842,
+  "prediction_spearman_old_vs_physical": 0.9934384436632011,
+  "archived_gate": {
+    "priority_n_expected": 1810,
+    "supported_expected": 1469,
+    "exploratory_expected": 341,
+    "robust_expected": 1574,
+    "changed_membership_expected": 428,
+    "priority_jaccard_expected": 0.7885375494071146,
+    "robust_jaccard_expected": 0.786117381489842,
+    "prediction_spearman_expected": 0.9934384436632011
+  },
+  "inputs": {
+    "Building_Timeline.xlsx": "f1758236b426b984373f974d88bd052504c23dbf6626a236d1c272b7002cf70a",
+    "physical_dem_candidates_48470.csv": "61d9e913804b3caafbda71273ee0a73bf8ed8f281892db1e3424781214ea7d93",
+    "spatial_folds_locked.xlsx": "38260947dd53a654feb4951f4aa2372490e197f80ed64f0b921a0031fd531f25",
+    "frozen_xiongan_physical_dem_tre_ensemble_reconstructed_v15.joblib": "e5eabe09fad10be9bfc72dc0fae3cc738e5a119005c99ad93b984273cbb1454e",
+    "locked_fold_grid_comparison_reconstructed_v15.csv": "4db20c29aab155c3162114d945f5882f47ebe1e0753cf3654e863e9662cf64c4",
+    "frozen_xiongan_tre_ensemble.joblib": "7f8e40809c4f4963f1e5510e09110b6e4843c9f8a8a3941cf82fa86376efdba3",
+    "monitoring_priority_evidence_grid.csv": "9d8a32bd2332773bf5fe0861553e3b8cabc38bed2d852a0828752db79fac9a3e"
+  },
+  "outputs": {
+    "physical_dem_monitoring_priority_grid_reconstructed_v15.csv": "b628b3a28df5e83643f63b8a30b01270a29d9278ae980390826e8e24c347ddb4",
+    "D962_observation_candidates_reconstructed_v15.csv": "08387e3b3fd7294c92340a8491ad93066b2d2b0f2e43b49711472c2038f3a0f5",
+    "monitoring_priority_weight_sensitivity_reconstructed_v15.csv": "585a344eca5f777d840c5bc5de15ccb2729a3a056b6f634b95691693eb72f6f5"
+  }
+}
