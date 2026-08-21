@@ -19,4 +19,4 @@ Package status: `0.1.1` — public audit and reconstruction subset.
 
 ## Release controls
 
-The package is released under the MIT License and remains limited to the audited scope described above. Controlled inputs, grid-level outputs, model artefacts, and third-party source materials are excluded.
+The MIT License applies only to author-written code in `code/` and `scripts/`. The small public derived outputs in `reference_outputs/` are released under CC BY 4.0; see `LICENSE-DATA`. The broader public archive of non-restricted aggregate and fold-level derived tables is available through the [Zenodo concept DOI](https://doi.org/10.5281/zenodo.22048331), also under CC BY 4.0. Controlled inputs, grid-level outputs, model artefacts, and third-party source materials are excluded.

@@ -24,4 +24,4 @@ No raw Sentinel-1 scenes, SARscape projects or logs, `Building_Timeline.xlsx`, s
 
 ## Release controls
 
-The MIT License applies only to author-written code in `code/` and `scripts/`.  The public derived outputs in `reference_outputs/` are released under CC BY 4.0; see `LICENSE-DATA` and the associated [Zenodo record](https://doi.org/10.5281/zenodo.22048332).  Controlled data, grid-level outputs, model artefacts, and third-party materials remain excluded.
+The MIT License applies only to author-written code in `code/` and `scripts/`.  The public derived outputs in `reference_outputs/` are released under CC BY 4.0; see `LICENSE-DATA` and the associated [Zenodo record](https://doi.org/10.5281/zenodo.22048331).  Controlled data, grid-level outputs, model artefacts, and third-party materials remain excluded.
