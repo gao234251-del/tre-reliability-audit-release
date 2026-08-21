@@ -1,0 +1,7 @@
+# Licence for public derived aggregate outputs
+
+The public derived aggregate outputs in `reference_outputs/` are licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+This licence does not apply to the author-written code in `code/` and `scripts/`, which is covered by the MIT License in `LICENSE`.  It also does not grant any rights to source data, coordinate- or grid-level inputs or outputs, candidate locations, fitted models, SARscape projects, Sentinel-1 products, `Building_Timeline.xlsx`, or third-party materials; those materials are absent from this repository.
+
+For the broader public archive of non-restricted aggregate and fold-level derived tables, cite and use the associated Zenodo record: [10.5281/zenodo.22048332](https://doi.org/10.5281/zenodo.22048332), released under CC BY 4.0.
