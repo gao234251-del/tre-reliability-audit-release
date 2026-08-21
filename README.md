@@ -25,7 +25,7 @@ Consequently, the repository alone cannot execute `run_frozen_audit.ps1`.  It be
 
 ## Public derived-table archive
 
-Non-restricted aggregate and fold-level derived tables supporting the reported TRE diagnostics are archived at [Zenodo, version 0.1.1](https://doi.org/10.5281/zenodo.22048332).  The Zenodo archive is a separately citable CC BY 4.0 dataset; it contains no raw source data, coordinates, grid-level records, candidate locations, model files, or third-party materials.
+Non-restricted aggregate and fold-level derived tables supporting the reported TRE diagnostics are archived at [Zenodo (all versions)](https://doi.org/10.5281/zenodo.22048331).  The Zenodo archive is a separately citable CC BY 4.0 dataset; it contains no raw source data, coordinates, grid-level records, candidate locations, model files, or third-party materials.
 
 ## Environment
 
@@ -43,4 +43,4 @@ Only then may an authorised user run `scripts/run_frozen_audit.ps1 -Workbook <pa
 
 ## Citation and licensing
 
-Use `CITATION.cff` when citing this code package.  The MIT License applies only to the author-written code in `code/` and `scripts/`; see `LICENSE`.  Public derived aggregate outputs in `reference_outputs/` are released under CC BY 4.0; see `LICENSE-DATA` and the associated [Zenodo record](https://doi.org/10.5281/zenodo.22048332).
+Use `CITATION.cff` when citing this code package.  The MIT License applies only to the author-written code in `code/` and `scripts/`; see `LICENSE`.  Public derived aggregate outputs in `reference_outputs/` are released under CC BY 4.0; see `LICENSE-DATA` and the associated [Zenodo record](https://doi.org/10.5281/zenodo.22048331).
