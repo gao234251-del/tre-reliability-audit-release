@@ -14,9 +14,9 @@ Status: public audit and reconstruction subset.
 | `code/verify_reference_bundle.py` | SHA-256 checker for controlled local files | Public code release |
 | `scripts/run_frozen_audit.ps1` | Optional audit entry point after lawful controlled-input access | Public code release |
 | `requirements.txt` | Archived Python dependencies | Public code release |
-| `reference_outputs/*` | Small aggregate reconstruction summaries only | Public release |
+| `reference_outputs/*` | Small aggregate reconstruction summaries only | Public derived data release (CC BY 4.0; see `LICENSE-DATA`) |
 | `inputs/INPUTS_NOT_INCLUDED.md` | Controlled-input inventory and access boundary | Public release |
-| `README.md`, `CITATION.cff`, `SECURITY.txt` | Documentation, citation and security guidance | Public release |
+| `README.md`, `CITATION.cff`, `SECURITY.txt`, `LICENSE-DATA` | Documentation, citation, security and data-licensing guidance | Public release |
 
 ## Deliberately excluded
 
@@ -24,4 +24,4 @@ No raw Sentinel-1 scenes, SARscape projects or logs, `Building_Timeline.xlsx`, s
 
 ## Release controls
 
-This repository is distributed under the MIT License. Controlled data, grid-level outputs, model artefacts, and third-party materials remain excluded.
+The MIT License applies only to author-written code in `code/` and `scripts/`.  The public derived outputs in `reference_outputs/` are released under CC BY 4.0; see `LICENSE-DATA` and the associated [Zenodo record](https://doi.org/10.5281/zenodo.22048332).  Controlled data, grid-level outputs, model artefacts, and third-party materials remain excluded.

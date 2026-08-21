@@ -13,7 +13,7 @@ It is intentionally a **selected reconstruction subset**, not an end-to-end repr
 
 - `code/`: four Python reconstruction and audit scripts.
 - `scripts/run_frozen_audit.ps1`: an optional PowerShell entry point for the frozen-model audit once controlled inputs have been supplied lawfully.
-- `reference_outputs/`: four small, aggregate reconstruction summaries; no raw scenes, 100 m grid coordinates, candidate locations, or model artefacts are included.
+- `reference_outputs/`: four small, aggregate reconstruction summaries; no raw scenes, 100 m grid coordinates, candidate locations, or model artefacts are included.  These derived outputs are licensed separately under CC BY 4.0; see `LICENSE-DATA`.
 - `requirements.txt`: the archived Python package versions.
 - `inputs/INPUTS_NOT_INCLUDED.md`: the controlled input inventory and request boundary.
 
@@ -22,6 +22,10 @@ It is intentionally a **selected reconstruction subset**, not an end-to-end repr
 The following are deliberately absent: Sentinel-1 source products; SARscape projects and execution logs; `Building_Timeline.xlsx`; locked folds or any coordinate/grid-level input; monitoring candidate locations; fitted model artefacts; and third-party hydrogeological, construction, terrain, or map data.  Their availability and redistribution depend on provider, institutional, and third-party rights.
 
 Consequently, the repository alone cannot execute `run_frozen_audit.ps1`.  It becomes executable only for an authorised user who has obtained the controlled inputs stated in `inputs/INPUTS_NOT_INCLUDED.md`, retained their provenance, and has permission to use them.
+
+## Public derived-table archive
+
+Non-restricted aggregate and fold-level derived tables supporting the reported TRE diagnostics are archived at [Zenodo, version 0.1.1](https://doi.org/10.5281/zenodo.22048332).  The Zenodo archive is a separately citable CC BY 4.0 dataset; it contains no raw source data, coordinates, grid-level records, candidate locations, model files, or third-party materials.
 
 ## Environment
 
@@ -37,6 +41,6 @@ python code/verify_reference_bundle.py --package-root . --output-json qa/static_
 
 Only then may an authorised user run `scripts/run_frozen_audit.ps1 -Workbook <path-to-authorised-Building_Timeline.xlsx>`.
 
-## Citation and licence
+## Citation and licensing
 
-Use `CITATION.cff` when citing this code package.  This release is distributed under the MIT License; see `LICENSE`.
+Use `CITATION.cff` when citing this code package.  The MIT License applies only to the author-written code in `code/` and `scripts/`; see `LICENSE`.  Public derived aggregate outputs in `reference_outputs/` are released under CC BY 4.0; see `LICENSE-DATA` and the associated [Zenodo record](https://doi.org/10.5281/zenodo.22048332).
