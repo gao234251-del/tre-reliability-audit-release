@@ -29,7 +29,7 @@ if ($LASTEXITCODE -ne 0) { throw 'Static-file audit failed.' }
     --candidate-csv (Join-Path $root 'inputs\physical_dem_candidates_48470.csv') `
     --locked-folds (Join-Path $root 'inputs\journal_spatial_folds_locked.xlsx') `
     --old-artifact (Join-Path $root 'inputs\frozen_xiongan_tre_ensemble.joblib') `
-    --reference-grid (Join-Path $root 'reference_outputs\locked_fold_grid_comparison_reconstructed_v15.csv') `
+    --reference-grid (Join-Path $root 'reference_outputs\locked_fold_grid_comparison_reconstructed.csv') `
     --output-json $OutputJson
 if ($LASTEXITCODE -ne 0) { throw 'Frozen-model audit failed.' }
 Write-Host "Audit report written to: $OutputJson"

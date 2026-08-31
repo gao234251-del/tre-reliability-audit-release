@@ -1,7 +1,8 @@
 # Code-release QA
 
-Date: 2026-08-21  
-Package status: `0.1.1` — public audit and reconstruction subset.
+Date: 2026-08-31
+
+Package status: `0.1.2` — public audit and reconstruction subset.
 
 ## Scope audit
 
@@ -16,6 +17,7 @@ Package status: `0.1.1` — public audit and reconstruction subset.
 3. Scanned included text/code for common credential patterns: no secret-like value was found.  The sole keyword hit was the explanatory word `credential` in `SECURITY.txt`.
 4. Scanned Python/PowerShell files for Windows and common Unix absolute-path strings: no match.
 5. Checked cache artefacts: zero `__pycache__` directories and zero `.pyc` files.
+6. Scanned tracked filenames and text for internal analysis-iteration labels: no match; public files use descriptive, revision-independent names.
 
 ## Release controls
 

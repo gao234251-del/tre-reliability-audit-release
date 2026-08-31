@@ -9,7 +9,7 @@ import joblib
 import numpy as np
 import pandas as pd
 
-from evaluate_physical_dem_candidate_v15 import FEATURE_ORDER, engineer_features
+from evaluate_physical_dem_candidate import FEATURE_ORDER, engineer_features
 
 
 EXPECTED_HASHES = {

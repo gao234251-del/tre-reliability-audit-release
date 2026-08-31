@@ -1,6 +1,7 @@
 # TRE reconstruction and audit scripts — public release
 
-Version: `0.1.1`  
+Version: `0.1.2`
+
 Status: public audit and reconstruction subset.
 
 ## Purpose and scope

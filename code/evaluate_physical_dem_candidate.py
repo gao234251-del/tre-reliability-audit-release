@@ -221,9 +221,9 @@ def main() -> None:
             "physical_dem_m": modelled["DEM"].to_numpy(float),
         }
     )
-    grid_path = args.output_dir / "locked_fold_grid_comparison_reconstructed_v15.csv"
+    grid_path = args.output_dir / "locked_fold_grid_comparison_reconstructed.csv"
     output.to_csv(grid_path, index=False, encoding="utf-8-sig", float_format="%.12g")
-    fold_path = args.output_dir / "physical_dem_fold_metrics_reconstructed_v15.csv"
+    fold_path = args.output_dir / "physical_dem_fold_metrics_reconstructed.csv"
     pd.DataFrame(fold_rows).to_csv(fold_path, index=False, encoding="utf-8-sig", float_format="%.12g")
 
     artifact = {
@@ -241,7 +241,7 @@ def main() -> None:
         },
         "folds": physical_folds,
     }
-    artifact_path = args.output_dir / "frozen_xiongan_physical_dem_tre_ensemble_reconstructed_v15.joblib"
+    artifact_path = args.output_dir / "frozen_xiongan_physical_dem_tre_ensemble_reconstructed.joblib"
     joblib.dump(artifact, artifact_path, compress=0)
 
     metrics = {

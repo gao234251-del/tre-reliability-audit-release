@@ -11,7 +11,7 @@ import pandas as pd
 from scipy.stats import spearmanr
 from sklearn.ensemble import RandomForestRegressor
 
-from evaluate_physical_dem_candidate_v15 import (
+from evaluate_physical_dem_candidate import (
     FEATURE_ORDER,
     NEW_COLUMNS,
     RF_PARAMS,
@@ -262,7 +262,7 @@ def main() -> None:
     data.loc[priority & ~data["physical_dem_within_support"] & robust, "action_level"] = "B1"
     data.loc[priority & ~data["physical_dem_within_support"] & ~robust, "action_level"] = "B2"
 
-    output_path = args.output_dir / "physical_dem_monitoring_priority_grid_reconstructed_v15.csv"
+    output_path = args.output_dir / "physical_dem_monitoring_priority_grid_reconstructed.csv"
     data.to_csv(output_path, index=False, encoding="utf-8-sig", float_format="%.12g")
     action_columns = [
         "Grid_ID", "X", "Y", "priority_score", "priority_top10_weight_robustness",
@@ -272,11 +272,11 @@ def main() -> None:
         "construction_exposure_score", "hydrogeological_susceptibility_score",
         "reconstruction_status",
     ]
-    action_path = args.output_dir / "D962_observation_candidates_reconstructed_v15.csv"
+    action_path = args.output_dir / "D962_observation_candidates_reconstructed.csv"
     data.loc[priority, action_columns].sort_values(
         ["action_level", "priority_score"], ascending=[True, False]
     ).to_csv(action_path, index=False, encoding="utf-8-sig", float_format="%.12g")
-    scheme_path = args.output_dir / "monitoring_priority_weight_sensitivity_reconstructed_v15.csv"
+    scheme_path = args.output_dir / "monitoring_priority_weight_sensitivity_reconstructed.csv"
     pd.DataFrame(scheme_rows).to_csv(scheme_path, index=False, encoding="utf-8-sig")
 
     old_top = old_priority["priority_top10"].astype(bool)
@@ -347,7 +347,7 @@ def main() -> None:
         if exact
         else "FAIL_ARCHIVED_PRIORITY_REPRODUCTION"
     )
-    report_path = args.output_dir / "physical_dem_priority_reconstruction_report_v15.json"
+    report_path = args.output_dir / "physical_dem_priority_reconstruction_report.json"
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
 

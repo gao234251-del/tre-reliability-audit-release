@@ -1,15 +1,16 @@
 # Public-code release manifest
 
 Package: `TRE reconstruction and audit scripts`  
-Version: `0.1.1`  
+Version: `0.1.2`
+
 Status: public audit and reconstruction subset.
 
 ## Included files
 
 | Path | Role | Release status |
 |---|---|---|
-| `code/evaluate_physical_dem_candidate_v15.py` | Physical-DEM sensitivity reconstruction | Public code release |
-| `code/reconstruct_physical_dem_priority_v15.py` | Priority reconstruction under the physical-DEM sensitivity analysis | Public code release |
+| `code/evaluate_physical_dem_candidate.py` | Physical-DEM sensitivity reconstruction | Public code release |
+| `code/reconstruct_physical_dem_priority.py` | Priority reconstruction under the physical-DEM sensitivity analysis | Public code release |
 | `code/verify_frozen_baseline.py` | Frozen-baseline verification logic | Public code release |
 | `code/verify_reference_bundle.py` | SHA-256 checker for controlled local files | Public code release |
 | `scripts/run_frozen_audit.ps1` | Optional audit entry point after lawful controlled-input access | Public code release |

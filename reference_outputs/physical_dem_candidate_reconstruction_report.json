@@ -20,8 +20,8 @@
     "supported_construction_gap": 0
   },
   "outputs": {
-    "locked_fold_grid_comparison_reconstructed_v15.csv": "4db20c29aab155c3162114d945f5882f47ebe1e0753cf3654e863e9662cf64c4",
-    "physical_dem_fold_metrics_reconstructed_v15.csv": "343ba68cf654dc4e39264411a7a0ec527ad3d5c9dc8599fa9fd14df3ffefa8af",
-    "frozen_xiongan_physical_dem_tre_ensemble_reconstructed_v15.joblib": "e5eabe09fad10be9bfc72dc0fae3cc738e5a119005c99ad93b984273cbb1454e"
+    "locked_fold_grid_comparison_reconstructed.csv": "4db20c29aab155c3162114d945f5882f47ebe1e0753cf3654e863e9662cf64c4",
+    "physical_dem_fold_metrics_reconstructed.csv": "343ba68cf654dc4e39264411a7a0ec527ad3d5c9dc8599fa9fd14df3ffefa8af",
+    "frozen_xiongan_physical_dem_tre_ensemble_reconstructed.joblib": "e5eabe09fad10be9bfc72dc0fae3cc738e5a119005c99ad93b984273cbb1454e"
   }
 }

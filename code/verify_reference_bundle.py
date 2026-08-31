@@ -11,7 +11,7 @@ EXPECTED = {
     "inputs/journal_spatial_folds_locked.xlsx": "38260947dd53a654feb4951f4aa2372490e197f80ed64f0b921a0031fd531f25",
     "inputs/frozen_xiongan_tre_ensemble.joblib": "7f8e40809c4f4963f1e5510e09110b6e4843c9f8a8a3941cf82fa86376efdba3",
     "inputs/monitoring_priority_evidence_grid.csv": "9d8a32bd2332773bf5fe0861553e3b8cabc38bed2d852a0828752db79fac9a3e",
-    "reference_outputs/locked_fold_grid_comparison_reconstructed_v15.csv": "4db20c29aab155c3162114d945f5882f47ebe1e0753cf3654e863e9662cf64c4",
+    "reference_outputs/locked_fold_grid_comparison_reconstructed.csv": "4db20c29aab155c3162114d945f5882f47ebe1e0753cf3654e863e9662cf64c4",
 }
 
 
