@@ -292,7 +292,7 @@ def main() -> None:
     report = {
         "status": "PASS_EXACT_ARCHIVED_PRIORITY_REPRODUCTION",
         "scientific_boundary": (
-            "This is a deterministic V15 reconstruction from the documented source DEM, locked folds, "
+            "This is a deterministic reconstruction from the documented source DEM, locked folds, "
             "archived method and recovered input workbook. It is not the lost historical byte-identical CSV."
         ),
         "rows": int(len(data)),

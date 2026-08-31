@@ -12,8 +12,12 @@ import pandas as pd
 from evaluate_physical_dem_candidate import FEATURE_ORDER, engineer_features
 
 
+EXPECTED_WORKBOOK_HASHES = {
+    "fb63dab0f66a44aa823cb02455a3f26438d98c9b2c220aa64fe8f97e977b03ab",
+    "f1758236b426b984373f974d88bd052504c23dbf6626a236d1c272b7002cf70a",
+}
+
 EXPECTED_HASHES = {
-    "workbook": "fb63dab0f66a44aa823cb02455a3f26438d98c9b2c220aa64fe8f97e977b03ab",
     "candidate_csv": "61d9e913804b3caafbda71273ee0a73bf8ed8f281892db1e3424781214ea7d93",
     "locked_folds": "38260947dd53a654feb4951f4aa2372490e197f80ed64f0b921a0031fd531f25",
     "old_artifact": "7f8e40809c4f4963f1e5510e09110b6e4843c9f8a8a3941cf82fa86376efdba3",
@@ -49,7 +53,14 @@ def main() -> None:
         "reference_grid": args.reference_grid,
     }
     hashes = {name: sha256(path) for name, path in supplied.items()}
-    hash_gate = {name: hashes[name] == EXPECTED_HASHES[name] for name in hashes}
+    hash_gate = {
+        name: (
+            hashes[name] in EXPECTED_WORKBOOK_HASHES
+            if name == "workbook"
+            else hashes[name] == EXPECTED_HASHES[name]
+        )
+        for name in hashes
+    }
 
     raw = pd.read_excel(args.workbook)
     candidates = pd.read_csv(args.candidate_csv, usecols=["Grid_ID", "DEM_physical_average"])
@@ -90,6 +101,7 @@ def main() -> None:
         "mean_abs_difference_mm_yr": float(absolute_error.mean()),
         "within_1e-9": exact,
         "input_hashes": hashes,
+        "accepted_workbook_hashes": sorted(EXPECTED_WORKBOOK_HASHES),
         "hash_gate": hash_gate,
     }
     args.output_json.parent.mkdir(parents=True, exist_ok=True)

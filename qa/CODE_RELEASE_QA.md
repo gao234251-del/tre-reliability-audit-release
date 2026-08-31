@@ -2,7 +2,7 @@
 
 Date: 2026-08-31
 
-Package status: `0.1.2` — public audit and reconstruction subset.
+Package status: `0.1.3` — public audit and reconstruction subset.
 
 ## Scope audit
 
@@ -18,6 +18,7 @@ Package status: `0.1.2` — public audit and reconstruction subset.
 4. Scanned Python/PowerShell files for Windows and common Unix absolute-path strings: no match.
 5. Checked cache artefacts: zero `__pycache__` directories and zero `.pyc` files.
 6. Scanned tracked filenames and text for internal analysis-iteration labels: no match; public files use descriptive, revision-independent names.
+7. Ran the frozen-baseline audit separately with both retained workbook hashes: both passed the input hash gate and reproduced all 48,470 locked reference predictions within the `1e-9` tolerance.
 
 ## Release controls
 

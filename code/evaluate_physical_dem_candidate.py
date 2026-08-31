@@ -229,7 +229,7 @@ def main() -> None:
     artifact = {
         "metadata": {
             "artifact": "Reconstructed Xiong'an physical-DEM five-fold TRE ensemble",
-            "version": "V15_RECONSTRUCTED_2026-08-15",
+            "version": "0.1.3",
             "status": "RECONSTRUCTED_NOT_HISTORICAL_ORIGINAL",
             "feature_order": FEATURE_ORDER,
             "target": "Subsidence_Tendency = -Settle_mean; positive = stronger subsidence",

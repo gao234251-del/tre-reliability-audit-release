@@ -1,6 +1,6 @@
 # TRE reconstruction and audit scripts — public release
 
-Version: `0.1.2`
+Version: `0.1.3`
 
 Status: public audit and reconstruction subset.
 
@@ -41,6 +41,8 @@ python code/verify_reference_bundle.py --package-root . --output-json qa/static_
 ```
 
 Only then may an authorised user run `scripts/run_frozen_audit.ps1 -Workbook <path-to-authorised-Building_Timeline.xlsx>`.
+
+Two retained byte-level copies of the controlled workbook are recognised by the audit (`fb63dab0...03ab` and `f1758236...f70a`). Both reproduce the locked 48,470-cell reference predictions within an absolute tolerance of `1e-9`; the reconstruction report records the exact copy used for that run.
 
 ## Citation and licensing
 
