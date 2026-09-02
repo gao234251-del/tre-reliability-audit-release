@@ -26,7 +26,7 @@ Consequently, the repository alone cannot execute `run_frozen_audit.ps1`.  It be
 
 ## Public derived-table archive
 
-Non-restricted aggregate and fold-level derived tables supporting the reported TRE diagnostics are archived at [Zenodo (all versions)](https://doi.org/10.5281/zenodo.22048331).  The Zenodo archive is a separately citable CC BY 4.0 dataset; it contains no raw source data, coordinates, grid-level records, candidate locations, model files, or third-party materials.
+Non-restricted aggregate and fold-level derived tables supporting the reported TRE diagnostics are archived on Zenodo. The [concept DOI](https://doi.org/10.5281/zenodo.22048331) resolves to all versions; the manuscript cites the current released version using DOI [10.5281/zenodo.22048691](https://doi.org/10.5281/zenodo.22048691). The Zenodo archive is a separately citable CC BY 4.0 dataset; it contains no raw source data, coordinates, grid-level records, candidate locations, model files, or third-party materials.
 
 ## Environment
 
